@@ -1,0 +1,54 @@
+{
+  "name": "@augusto-devingcc/company-intel-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that scrapes company websites and uses Claude to classify them and draft outbound emails.",
+  "license": "MIT",
+  "author": "Augusto García <augusto@realtialabs.com>",
+  "type": "module",
+  "bin": {
+    "company-intel-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "anthropic",
+    "sales-intelligence",
+    "company-enrichment"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augusto-devingcc/company-intel-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/augusto-devingcc/company-intel-mcp/issues"
+  },
+  "homepage": "https://github.com/augusto-devingcc/company-intel-mcp#readme",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.1",
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "cheerio": "^1.0.0",
+    "undici": "^7.2.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

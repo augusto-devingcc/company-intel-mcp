@@ -1,0 +1,10 @@
+src/
+node_modules/
+tsconfig.json
+*.log
+.env*
+.git/
+.github/
+.vscode/
+.idea/
+*.tsbuildinfo
