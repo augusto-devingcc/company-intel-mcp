@@ -22,7 +22,7 @@ Open `~/Library/Application Support/Claude/claude_desktop_config.json` on macOS 
   "mcpServers": {
     "company-intel": {
       "command": "npx",
-      "args": ["-y", "@augusto-devingcc/company-intel-mcp"],
+      "args": ["-y", "github:augusto-devingcc/company-intel-mcp"],
       "env": {
         "ANTHROPIC_API_KEY": "sk-ant-..."
       }
@@ -41,7 +41,7 @@ Open Cursor settings, go to `MCP`, and add a new server:
 {
   "company-intel": {
     "command": "npx",
-    "args": ["-y", "@augusto-devingcc/company-intel-mcp"],
+    "args": ["-y", "github:augusto-devingcc/company-intel-mcp"],
     "env": {
       "ANTHROPIC_API_KEY": "sk-ant-..."
     }
@@ -54,8 +54,10 @@ Open Cursor settings, go to `MCP`, and add a new server:
 The server speaks stdio. Run it directly:
 
 ```bash
-ANTHROPIC_API_KEY=sk-ant-... npx -y @augusto-devingcc/company-intel-mcp
+ANTHROPIC_API_KEY=sk-ant-... npx -y github:augusto-devingcc/company-intel-mcp
 ```
+
+Once published to npm the install path becomes `npx -y @augusto-devingcc/company-intel-mcp` with the same arguments.
 
 ## Environment
 

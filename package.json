@@ -18,6 +18,7 @@
     "build": "tsc",
     "dev": "tsx watch src/index.ts",
     "start": "node dist/index.js",
+    "prepare": "[ -d node_modules/typescript ] && tsc || true",
     "prepublishOnly": "npm run build"
   },
   "engines": {
